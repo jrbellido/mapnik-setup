@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 RUN apk update
 RUN apk add -q --no-cache openssl python binutils cmake make libgcc gcc g++
-RUN apk add -q --no-cache freetype-dev icu-dev harfbuzz-dev boost-dev libjpeg libpng
+RUN apk add -q --no-cache freetype-dev icu-dev harfbuzz-dev boost-dev libjpeg libpng libcurl libpg
 
 RUN wget -O /tmp/mapnik.tar.bz2 https://github.com/mapnik/mapnik/releases/download/v3.0.22/mapnik-v3.0.22.tar.bz2
 RUN bzip2 -d /tmp/mapnik.tar.bz2
